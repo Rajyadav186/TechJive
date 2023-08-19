@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url(./img/maintenance-2422172_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 50%;
+    padding: .3em 1em ;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: pp mori;
+    background-color: rgb(220, 90, 217);
+}
+button{
+    box-shadow: 0px 70px 10px rgb(0, 0, 0,0.2);
+}
+button:active{
+    box-shadow: 0px 5px 9px black;
+    transform: translateY(4px);
+}

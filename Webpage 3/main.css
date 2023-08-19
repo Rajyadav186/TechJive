@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.purple{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-color: #edbfff;
+}
+.cursor{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: fixed;
+    background-color:#edbfff;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: all linear 0.1s ;
+}
+.main{
+    background-color: #0F0D0D;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+
+.nav{
+    height: 55px;
+    width: 100%;
+    /*background-color: rgb(240, 0, 0);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+.nav img{
+    height: 60px;
+    cursor: pointer;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.nav .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: #5d00ff;
+    cursor:cell;
+}
+.nav h4{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav h4:nth-child(1){
+    border-bottom: 1.5px solid white;
+}
+.nav h4:nth-child(1):hover{
+    border-bottom:none;
+}
+.nav h4:nth-child(2):hover{
+    border-bottom:1.5px solid white;
+}
+.nav h4:nth-child(3):hover{
+    border-bottom: 1.5px solid white;
+}
+.nav h4:nth-child(4):hover{
+    border-bottom: 1.5px solid white;
+}
+.page1 h1{
+    font-size: 9vw;
+    font-weight: 500;
+    font-family:pp mori;
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-size: 9vw;
+    font-weight: 500;
+    font-family: pp mori;
+    margin-left: 26vw;
+    margin-top: 3vw;
+}
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+}
+.page2{
+    min-height: 70vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid black;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    font-family: pp mori;
+    color: rgb(0, 0, 0);
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.page2-left{
+    width: 38%;
+}
+.page2-right{
+    width: 30%;
+}
+.page2-left h2{
+    font-size: 5vw;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-family: pp mori;
+    line-height: 4vw;
+}
+.page2-right p{
+    font-size: 3vw;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-family: pp mori;
+}
+.page2-right button{
+    width: 100%;
+    height: 30px;
+    border-radius:50px;
+    border: none;
+    background-color: #edbfff;
+    color: #000;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: pp mori;
+}
+.page2-right button{
+    box-shadow: 0px 40px 10px rgb(0,0,0,0.3);
+}
+.page2-right button:active{
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.3);
+    transform: translateY(4px);
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 8;
+    padding-top: 100px;
+}
+.page3 h1{
+    font-size: 6.8vw;
+    color: #000;
+    font-family: pp mori;
+    font-weight: 300;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.page3 img{
+    height: 30vw;
+    margin-top: 160px;
+}
+.page3 video{
+    height: 30vw;
+}
+.page3-work{
+    color: red;
+    margin-top: 200px;
+}
+.weblink{
+    height: 30px;
+    width: 45%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 50%;
+    margin-top:35%;
+    background-color: #edbfff;
+    font-size: 20px;
+    font-weight: 400;
+    border:none;
+    border-radius: 50px;
+    font-family: pp mori;
+    text-align: center;
+    box-shadow: 0px 40px 9px rgb(0, 0, 0,0.2);
+}
+.weblink:active{
+    box-shadow: 0px 2px 9px  rgb(0, 0, 0,0.2) ;
+    transform: translateY(4px);
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page4 video{
+    height: 20vw;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem video{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem video:nth-child(1){
+    left: 0;
+}
+.elem video:nth-child(3){
+    right: 0;
+}
+.text-div{
+
+    height: 100px;
+    overflow:hidden ;
+}
+.elem h1{
+    font-size: 6vw;
+    font-weight: 600;
+    transition: all ease-out 0.3s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #edbfff;
+}
+.elem:hover{
+    background-color: black;
+}
+.elem:hover video{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+    height: 100vh;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 20px 30px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 30px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 0;
+    font-family: gilroy;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
