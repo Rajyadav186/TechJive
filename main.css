@@ -38,7 +38,7 @@ html, body{
     padding-top: 12vw;
 }
 
-.nav{
+#nav{
     height: 55px;
     width: 100%;
     /*background-color: rgb(240, 0, 0);*/
@@ -50,7 +50,7 @@ html, body{
     mix-blend-mode: difference;
     z-index: 99;
 }
-.nav img{
+#nav img{
     height: 60px;
     cursor: pointer;
 }
@@ -60,34 +60,44 @@ html, body{
     justify-content: center;
     gap: 24px;
 }
-.nav .circle{
+
+#nav:hover .nav-part2{
+    filter: blur(5px);
+}
+
+#nav:hover .nav-part2:hover{
+    filter: blur(0px);
+}
+
+#nav .circle{
     height: 20px;
     width: 20px;
     border-radius: 50%;
     color: #5d00ff;
     cursor:cell;
 }
-.nav h4{
+#nav .nav-part2{
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
 }
-.nav h4:nth-child(1){
+#nav h4:nth-child(2){
     border-bottom: 1.5px solid white;
 }
-.nav h4:nth-child(1):hover{
-    border-bottom:none;
+#nav h4:nth-child(2):hover{
+    border-bottom: none;
 }
-.nav h4:nth-child(2):hover{
+#nav h4:nth-child(3):hover{
     border-bottom:1.5px solid white;
 }
-.nav h4:nth-child(3):hover{
+#nav h4:nth-child(4):hover{
     border-bottom: 1.5px solid white;
 }
-.nav h4:nth-child(4):hover{
+#nav h4:nth-child(5):hover{
     border-bottom: 1.5px solid white;
 }
+
 .page1 h1{
     font-size: 9vw;
     font-weight: 500;
