@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Gilroy;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 html, body{
     height: 100%;
@@ -69,13 +69,7 @@ html, body{
     filter: blur(0px);
 }
 
-#nav .circle{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    color: #5d00ff;
-    cursor:cell;
-}
+
 #nav .nav-part2{
     font-size: 15px;
     font-weight: 500;
@@ -426,10 +420,267 @@ html, body{
 
 
 
+
+@media (max-width: 600px) {
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main{
+        background-color: #353535;
+    }
+    .page1{
+        background-color: #353535;
+        min-height: 40vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding-top: 12vw;
+    }
+    
+    #nav{
+        height: 50px;
+        width: 100%;
+        /*background-color: rgb(240, 0, 0);*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: fixed;
+        mix-blend-mode: difference;
+        z-index: 99;
+    }
+    #nav img{
+        height: 30px;
+        cursor: pointer;
+    }
+    .nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    #nav:hover .nav-part2{
+        filter: blur(5px);
+    }
+    
+    #nav:hover .nav-part2:hover{
+        filter: blur(0px);
+    }
+    
+    
+    #nav .nav-part2{
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+   
+    
+    .page1 h1{
+        font-size: 8vw;
+        font-weight: 500;
+        font-family:pp mori;
+        margin-left: 30vw;
+    }
+    .page1 h2{
+        font-size: 9vw;
+        font-weight: 500;
+        font-family: pp mori;
+        margin-left: 20vw;
+        margin-top: 8vw;
+    }
+    .page1 video{
+        width: 30%;
+        margin-top: 10vw;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-radius: 10px;
+    }
+    .page2{
+        background-color: #353535;
+        min-height: 70vh;
+        width: 100%;
+        padding: 50px 5vw;
+        border-bottom: 2px solid black;
+        position: relative;
+        z-index: 9;
+    }
+    .page2 h1{
+        font-size: 9vw;
+        font-weight: 500;
+        font-family: pp mori;
+        color: rgb(0, 0, 0);
+    }
+    .page2-container{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+    }
+    .page2-left{
+        width: 38%;
+    }
+    .page2-right{
+        width: 30%;
+    }
+    .page2-left h2{
+        font-size: 7vw;
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        font-family: pp mori;
+        line-height: 6.7vw;
+    }
+    .page2-right p{
+        font-size: 4vw;
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        font-family: pp mori;
+    }
+    .page2-right button{
+        width: 100%;
+        height: 30px;
+        border-radius:50px;
+        border: none;
+        background-color: #edbfff;
+        color: #000;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        font-family: pp mori;
+    }
+    .page2-right button{
+        box-shadow: 0px 40px 10px rgb(0,0,0,0.3);
+    }
+    .page2-right button:active{
+        box-shadow: 0px 5px 10px rgb(0,0,0,0.3);
+        transform: translateY(4px);
+    }
+    .page3{
+        background-color: #353535;
+        min-height: 70vh;
+        width: 100%;
+        position: relative;
+        z-index: 8;
+        padding-top: 40px;
+    }
+    .page3 h1{
+        font-size: 8vw;
+        color: #000;
+        font-family: pp mori;
+        font-weight: 300;
+        margin-left: 70px;
+    }
+    .page3-part1{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .page3 img{
+        height: 30vw;
+        margin-top: 160px;
+    }
+    .page3 video{
+        height: 40vw;
+    }
+    .weblink{
+        height: 40px;
+        width: 50%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 40%;
+        margin-top:50%;
+        background-color: #edbfff;
+        font-size: 20px;
+        font-weight: 400;
+        border:none;
+        border-radius: 50px;
+        font-family: pp mori;
+        text-align: center;
+        box-shadow: 0px 40px 9px rgb(0, 0, 0,0.2);
+    }
+    .weblink:active{
+        box-shadow: 0px 2px 9px  rgb(0, 0, 0,0.2) ;
+        transform: translateY(4px);
+    }
+    .page4{
+        background-color: #353535;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding: 140px 100px;
+    }
+    .page4 video{
+        height: 20vw;
+    }
+    .elem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+@media  (max-width:400px){
+    .page4{
+        background-color: #353535;
+    }
+    .page4 video{
+        height: 20vw;
+    }
+    
+    .elem video{
+        height: 20vh;
+    }
+
+    .elem video:nth-child(1){
+        top: -300%;
+    }
+    .elem video:nth-child(3){
+        top: 70%;
+    }
+}
+    .elem video{
+        height: 20vh;
+        position: absolute;
+        opacity: 0;
+        transition: all ease-out 0.5s;
+        transform: translateY(10%) rotate(2deg);
+    }
+
+    .elem video:nth-child(1){
+        left: -50%;
+    }
+    .elem video:nth-child(3){
+        right: -50%;
+    }
+    .text-div{
+    
+        height: 100%;
+        overflow:hidden ;
+    }
+    .elem h1{
+        font-size: 6vw;
+        font-weight: 600;
+        transition: all ease-out 0.3s;
+        color: black;
+    }
+    .elem #color{
+        color: transparent;
+    }
+    .elem:hover h1{
+        transform: translateY(-100%);
+        color: #edbfff;
+    }
+    .elem:hover{
+        background-color: transparent;
+    }
 /* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
