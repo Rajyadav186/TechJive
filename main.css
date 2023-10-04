@@ -644,6 +644,12 @@ html, body{
     .elem video:nth-child(3){
         top: 70%;
     }
+	.elem:hover{
+        background-color: transparent;
+    }
+    .elem #color{
+        color: transparent;
+    }
 }
     .elem video{
         height: 20vh;
