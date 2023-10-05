@@ -421,7 +421,7 @@ html, body{
 
 
 
-@media only screen and  (max-width: 600px) {
+@media (max-width: 600px) {
 
     html, body{
         height: 100%;
@@ -626,7 +626,7 @@ html, body{
         justify-content: center;
         position: relative;
     }
-@media only screen and   (max-width:400px){
+@media  (max-width:400px){
     .page4{
         background-color: #353535;
     }
@@ -644,7 +644,7 @@ html, body{
     .elem video:nth-child(3){
         top: 70%;
     }
-	.elem:hover{
+    .elem:hover{
         background-color: transparent;
     }
     .elem #color{
